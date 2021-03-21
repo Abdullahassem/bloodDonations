@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+    tools:context="com.abdullah.android.blooddonation.MainActivity"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/join_layout"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <ImageView-->
+<!--            android:layout_width="100dp"-->
+<!--            android:id="@+id/business_logo"-->
+<!--            android:src="@mipmap/ic_launcher"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:layout_gravity="center"/>-->
+
+
+        <EditText
+            android:hint="البريد الالكتروني"
+            android:id="@+id/join_email"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+        <EditText
+            android:id="@+id/join_password"
+            android:hint="كلمة المرور"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+
+        <EditText
+            android:id="@+id/join_name"
+            android:hint="الاسم الكامل"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+        <EditText
+            android:id="@+id/blood_type"
+            android:hint="فصيلة الدم"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+
+        <EditText
+            android:id="@+id/join_phone"
+            android:hint="رقم الهاتف "
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+
+        <Button
+            android:id="@+id/otp_button"
+            tools:background="@color/black"
+            android:layout_margin="8dp"
+            android:text="اكمال التسجيل"
+            android:onClick="callVerifyOTPScreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/join_Button"
+        tools:background="@color/black"
+        android:layout_margin="8dp"
+        android:text="انضم"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/sign_in_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="البريد الالكتروني"
+            android:id="@+id/login_email_edit_text"
+            android:textAlignment="center"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+        <EditText
+            android:id="@+id/login_password_edit_text"
+            android:hint="كلمة المرور"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:textColor="@color/text"
+            android:textStyle="bold"
+            tools:background="@color/black"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_style"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sign_in_button"
+        tools:background="@color/black"
+        android:layout_margin="8dp"
+        android:text="تسجيل دخول"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <EditText
+        android:id="@+id/otp_number"
+        android:hint="رقم التحقق"
+        android:textAlignment="center"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/edittext_style"/>
+
+
+</LinearLayout>
